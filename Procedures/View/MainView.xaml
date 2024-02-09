@@ -1,0 +1,26 @@
+<Window x:Class="Procedures.View.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:vm="clr-namespace:Procedures.ViewModel"
+        xmlns:v="clr-namespace:Procedures.View"
+        mc:Ignorable="d"
+        Title="GameStore" Height="400" Width="450"
+        WindowStartupLocation="CenterScreen">
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type vm:GamesListViewModel}">
+            <v:GamesListView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:AuthorizationViewModel}">
+            <v:AuthorizationView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:RegisterViewModel}">
+            <v:RegisterView/>
+        </DataTemplate>
+        
+    </Window.Resources>
+    <Grid>
+        <ContentPresenter Content="{Binding CurrentViewModel}" />
+    </Grid>
+</Window>
