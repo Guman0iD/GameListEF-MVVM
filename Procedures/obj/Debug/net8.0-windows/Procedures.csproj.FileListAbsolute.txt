@@ -95,3 +95,6 @@ D:\StepIT\EntityFM\ШаблонMVVMrar\Procedures\Procedures\obj\Debug\net8.0-wi
 D:\StepIT\EntityFM\ШаблонMVVMrar\Procedures\Procedures\obj\Debug\net8.0-windows\View\AuthorizationView.baml
 D:\StepIT\EntityFM\ШаблонMVVMrar\Procedures\Procedures\obj\Debug\net8.0-windows\View\RegisterView.g.cs
 D:\StepIT\EntityFM\ШаблонMVVMrar\Procedures\Procedures\obj\Debug\net8.0-windows\View\RegisterView.baml
+D:\StepIT\EntityFM\ШаблонMVVMrar\Procedures\Procedures\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\StepIT\EntityFM\ШаблонMVVMrar\Procedures\Procedures\obj\Debug\net8.0-windows\Procedures.sourcelink.json
+D:\StepIT\EntityFM\ШаблонMVVMrar\Procedures\Procedures\bin\Debug\net8.0-windows\StoreGames.json

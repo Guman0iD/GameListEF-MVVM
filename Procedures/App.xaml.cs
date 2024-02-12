@@ -1,6 +1,7 @@
 ﻿using System.Windows;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Procedures.Messages;
 using Procedures.Services;
 using Procedures.View;
 using Procedures.ViewModel;
@@ -30,6 +31,7 @@ namespace Procedures
             ServiceCollection.AddSingleton<RegisterView>();
             ServiceCollection.AddTransient<RegisterViewModel>();
             ServiceCollection.AddTransient<AppDbContext>();
+            ServiceCollection.AddSingleton<SendAccountMessage>();
             
             ServiceCollection.AddSingleton<IConfiguration>(configuration);
             

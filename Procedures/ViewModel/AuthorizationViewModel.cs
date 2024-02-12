@@ -24,9 +24,9 @@ public partial class AuthorizationViewModel : BaseViewModel
     }
 
 
-    [ObservableProperty]
+    [ObservableProperty] 
     private string? _enteredPass;
-    [ObservableProperty]
+    [ObservableProperty] 
     private string? _enteredLogin;
 
     [RelayCommand]
@@ -34,11 +34,23 @@ public partial class AuthorizationViewModel : BaseViewModel
     {
         try
         {
-            var account = _dbContext.Accounts.Include(account => account.Player).FirstOrDefault(a => a.Login == EnteredLogin);
+            var account = _dbContext.Accounts.Include(account => account.Player)
+                .FirstOrDefault(a => a.Login == EnteredLogin);
             if (account != null)
             {
                 var verifyPass = EnteredPass != null && HashPass.VerifyPass(EnteredPass, account.HashPass);
-                MessageBox.Show(verifyPass ? $"Hello {account.Player.FirstName}" : "Password is wrong!");
+
+                if (verifyPass)
+                {
+                    WeakReferenceMessenger.Default.Send(new SendAccountMessage(account));
+                    
+                    WeakReferenceMessenger.Default.Send(
+                        new ChangeViewModelMessage(App.ServiceProvider.GetService<GamesListViewModel>()!));
+                }
+                else
+                {
+                    MessageBox.Show("Password is wrong!");
+                }
             }
             else
             {

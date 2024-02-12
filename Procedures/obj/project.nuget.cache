@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TBmoSczWiqPwywqvoV93kbG0i6OmGqpnL3jmk4wtfy5VjwFh1E/SFNsCuBzkfnH7NTPeUqSRm9kcZiN0mZDMtA==",
+  "dgSpecHash": "32qfvVqWDPGuLnB2dsZvMPsJVfvQxpij1eHDoi98uuyHmmboYFwOTcOSBFw2n3SqJkGAUe4yhgIy3FzOjssQLQ==",
   "success": true,
   "projectFilePath": "D:\\StepIT\\EntityFM\\ШаблонMVVMrar\\Procedures\\Procedures\\Procedures.csproj",
   "expectedPackageFiles": [
@@ -46,6 +46,7 @@
     "C:\\Users\\alask\\.nuget\\packages\\microsoft.web.webview2\\1.0.864.35\\microsoft.web.webview2.1.0.864.35.nupkg.sha512",
     "C:\\Users\\alask\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\alask\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.77\\microsoft.xaml.behaviors.wpf.1.1.77.nupkg.sha512",
+    "C:\\Users\\alask\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\alask\\.nuget\\packages\\system.configuration.configurationmanager\\6.0.1\\system.configuration.configurationmanager.6.0.1.nupkg.sha512",
     "C:\\Users\\alask\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.1\\system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
     "C:\\Users\\alask\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
